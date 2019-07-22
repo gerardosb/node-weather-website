@@ -32,21 +32,21 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
-        name: 'gerald jonson'
+        name: 'Gerardo Sánchez'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'about page',
-        name: 'gerald jonson'
+        title: 'About Page',
+        name: 'Gerardo Sánchez'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        title: 'Help page',
-        name: 'gerald jonson'
+        title: 'Help Page',
+        name: 'Gerardo Sánchez'
     })
 })
 
@@ -101,14 +101,14 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'gerald jonson',
+        name: 'Gerardo Sánchez',
         error: 'Articulo de ayuda no Encontrado'
     })
 })
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'gerald jonson',
+        name: 'Gerardo Sánchez',
         error: 'Pagina no Encontrada'
     })
 })
